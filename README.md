@@ -1,6 +1,9 @@
-# openpyxl - A Python library to read/write Excel 2010 xlsx/xlsm files
+# openpyxl
 
+A Python library to read/write Excel 2010 xlsx/xlsm files
 https://openpyxl.readthedocs.io/en/stable/
+
+Version: openpyxl-3.0.10
 
 ## Introduction
 
