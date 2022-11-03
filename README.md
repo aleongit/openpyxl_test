@@ -17,6 +17,11 @@ It was born from lack of existing library to read/write natively from Python the
 
 ```bash
 pip install openpyxl
+```
+
+## Optional
+
+```bash
 pip install pillow
 ```
 
