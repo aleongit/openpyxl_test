@@ -58,3 +58,5 @@ wb.save("sample.xlsx")
 1. <a href="https://openpyxl.readthedocs.io/en/stable/tutorial.html#create-a-workbook">Create a Workbook</a>
 
 2. <a href="https://openpyxl.readthedocs.io/en/stable/tutorial.html#playing-with-data">Playing with data</a>
+- Accessing one cell
+- Accessing many cells
