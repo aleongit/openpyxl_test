@@ -90,5 +90,72 @@ d = ws.cell(row=4, column=2, value=10)
 # will create 100x100 cells in memory, for nothing.
 # -------------------------------------------------------------------------------------------
 
+
+# Accessing many cells_________________________________________
+
+# Ranges of cells can be accessed using slicing:
+cell_range = ws['A1':'C2']
+print(cell_range)
+
+colC = ws['C']
+col_range = ws['C:D']
+row10 = ws[10]
+row_range = ws[5:10]
+
+print(colC)
+print(col_range)
+print(row10)
+print(row_range)
+print()
+
+# You can also use the Worksheet.iter_rows() method:
+for row in ws.iter_rows(min_row=1, max_col=3, max_row=2):
+    for cell in row:
+        print(cell)
+print()
+# <Cell Sheet1.A1>
+# <Cell Sheet1.B1>
+# <Cell Sheet1.C1>
+# <Cell Sheet1.A2>
+# <Cell Sheet1.B2>
+# <Cell Sheet1.C2>
+
+# Likewise the Worksheet.iter_cols() method will return columns:
+for col in ws.iter_cols(min_row=1, max_col=3, max_row=2):
+    for cell in col:
+        print(cell)
+print()
+# <Cell Sheet1.A1>
+# <Cell Sheet1.A2>
+# <Cell Sheet1.B1>
+# <Cell Sheet1.B2>
+# <Cell Sheet1.C1>
+# <Cell Sheet1.C2>
+
+# -------------------------------------------------------------------------------------------
+# Note !!!
+# For performance reasons the Worksheet.iter_cols() method is not available in read-only mode.
+# -------------------------------------------------------------------------------------------
+
+# If you need to iterate through all the rows or columns of a file, you can instead use the Worksheet.rows property:
+ws = wb.active
+ws['C9'] = 'hello world'
+rows = tuple(ws.rows)
+print(rows)
+print()
+
+# or the Worksheet.columns property:
+print(list(ws.columns))
+print()
+
+# -------------------------------------------------------------------------------------------
+# Note !!!
+# For performance reasons the Worksheet.columns property is not available in read-only mode.
+# -------------------------------------------------------------------------------------------
+
+
+# Values only_________________________________________
+# TODO:
+
 # Save the file
 wb.save("tutorial.xlsx")

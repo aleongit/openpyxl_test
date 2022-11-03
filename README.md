@@ -51,12 +51,13 @@ ws['A2'] = datetime.datetime.now()
 wb.save("sample.xlsx")
 ```
 
-## Tutorial test
+## Tutorial
 
-* <a href="https://openpyxl.readthedocs.io/en/stable/tutorial.html">Tutotial</a>
+https://openpyxl.readthedocs.io/en/stable/tutorial.html
 
 1. <a href="https://openpyxl.readthedocs.io/en/stable/tutorial.html#create-a-workbook">Create a Workbook</a>
 
 2. <a href="https://openpyxl.readthedocs.io/en/stable/tutorial.html#playing-with-data">Playing with data</a>
 - Accessing one cell
 - Accessing many cells
+- Values only
