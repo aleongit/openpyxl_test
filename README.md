@@ -102,8 +102,8 @@ xlsx: [usage.xlsx]
 ## <a href="https://openpyxl.readthedocs.io/en/stable/optimized.html">Optimised Modes</a>
 
 ```
-py: [optimized.py]
-xlsx: [optimized.xlsx]
+py: [optimized_read.py]
+xlsx: [lf.xlsx]
 ```
 
 1. <a href="https://openpyxl.readthedocs.io/en/stable/optimized.html#read-only-mode">Read-only mode</a>
