@@ -115,3 +115,17 @@ xlsx: [
 
 1. <a href="https://openpyxl.readthedocs.io/en/stable/optimized.html#read-only-mode">Read-only mode</a>
 2. <a href="https://openpyxl.readthedocs.io/en/stable/optimized.html#write-only-mode">Write-only mode</a>
+
+
+## <a href="https://openpyxl.readthedocs.io/en/stable/editing_worksheets.html">Editing Worksheets</a>
+
+. Inserting and deleting rows and columns, moving ranges of cells
+
+```
+py: [editing.py]
+xlsx: [editing.xlsx]
+```
+
+1. <a href="https://openpyxl.readthedocs.io/en/stable/editing_worksheets.html#inserting-rows-and-columns">Inserting rows and columns</a>
+2. <a href="https://openpyxl.readthedocs.io/en/stable/editing_worksheets.html#deleting-rows-and-columns">Deleting rows and columns</a>
+3. <a href="https://openpyxl.readthedocs.io/en/stable/editing_worksheets.html#moving-ranges-of-cells">Moving ranges of cells</a>
