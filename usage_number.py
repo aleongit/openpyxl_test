@@ -1,5 +1,5 @@
 import datetime
-from openpyxl import Workbook, load_workbook
+from openpyxl import load_workbook
 
 # Simple usage_______________________________________________________________
 # Using number formats_________________________________________

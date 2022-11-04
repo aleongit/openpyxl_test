@@ -1,4 +1,3 @@
-import datetime
 from openpyxl import load_workbook
 
 # Simple usage_______________________________________________________________

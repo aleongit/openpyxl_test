@@ -83,6 +83,7 @@ py: [
     usage_number.py,
     usage_formulae.py,
     usage_merge.py,
+    usage_image.py,
     ]
 xlsx: [usage.xlsx]
 ```
@@ -94,3 +95,4 @@ https://openpyxl.readthedocs.io/en/stable/usage.html
 3. <a href="https://openpyxl.readthedocs.io/en/stable/usage.html#using-number-formats">Using number formats</a>
 4. <a href="https://openpyxl.readthedocs.io/en/stable/usage.html#using-formulae">Using formulae</a>
 5. <a href="https://openpyxl.readthedocs.io/en/stable/usage.html#merge-unmerge-cells">Merge / Unmerge cells</a>
+6. <a href="https://openpyxl.readthedocs.io/en/stable/usage.html#inserting-an-image">Inserting an image</a>
