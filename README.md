@@ -98,3 +98,21 @@ https://openpyxl.readthedocs.io/en/stable/usage.html
 5. <a href="https://openpyxl.readthedocs.io/en/stable/usage.html#merge-unmerge-cells">Merge / Unmerge cells</a>
 6. <a href="https://openpyxl.readthedocs.io/en/stable/usage.html#inserting-an-image">Inserting an image</a>
 7. <a href="https://openpyxl.readthedocs.io/en/stable/usage.html#fold-outline">Fold (outline)</a>
+
+
+## Performance
+
+https://openpyxl.readthedocs.io/en/stable/performance.html
+
+
+## Optimised Modes
+
+```
+py: [optimized.py]
+xlsx: [optimized.xlsx]
+```
+
+https://openpyxl.readthedocs.io/en/stable/optimized.html#
+
+1. <a href="https://openpyxl.readthedocs.io/en/stable/optimized.html#read-only-mode">Read-only mode</a>
+2. <a href="https://openpyxl.readthedocs.io/en/stable/optimized.html#write-only-mode">Write-only mode</a>
