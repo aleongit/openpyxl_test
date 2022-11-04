@@ -129,3 +129,44 @@ xlsx: [editing.xlsx]
 1. <a href="https://openpyxl.readthedocs.io/en/stable/editing_worksheets.html#inserting-rows-and-columns">Inserting rows and columns</a>
 2. <a href="https://openpyxl.readthedocs.io/en/stable/editing_worksheets.html#deleting-rows-and-columns">Deleting rows and columns</a>
 3. <a href="https://openpyxl.readthedocs.io/en/stable/editing_worksheets.html#moving-ranges-of-cells">Moving ranges of cells</a>
+
+
+## <a href="https://openpyxl.readthedocs.io/en/stable/pandas.html">Working with Pandas and NumPy</a>
+
+
+## <a href="https://openpyxl.readthedocs.io/en/stable/charts/introduction.html">Charts</a>
+
+
+## <a href="https://openpyxl.readthedocs.io/en/stable/comments.html">Comments</a>
+
+
+## <a href="https://openpyxl.readthedocs.io/en/stable/styles.html">Working with styles</a>
+
+
+## <a href="https://openpyxl.readthedocs.io/en/stable/worksheet_properties.html">Additional Worksheet Properties</a>
+
+
+## <a href="https://openpyxl.readthedocs.io/en/stable/formatting.html">Conditional Formatting</a>
+
+
+## <a href="https://openpyxl.readthedocs.io/en/stable/pivot.html">Pivot Tables</a>
+
+
+## <a href="https://openpyxl.readthedocs.io/en/stable/print_settings.html">Print Settings</a>
+
+
+## <a href="https://openpyxl.readthedocs.io/en/stable/filters.html">Using filters and sorts</a>
+
+
+## <a href="https://openpyxl.readthedocs.io/en/stable/validation.html">Validating cells</a>
+
+
+## <a href="https://openpyxl.readthedocs.io/en/stable/defined_names.html">Defined Names</a>
+
+```
+py: [defined_names.py]
+xlsx: [defined_names.xlsx]
+```
+
+1. <a href="https://openpyxl.readthedocs.io/en/stable/defined_names.html#sample-use-for-ranges">Sample use for ranges</a>
+2. <a href="https://openpyxl.readthedocs.io/en/stable/defined_names.html#creating-new-named-ranges">Creating new named ranges</a>
