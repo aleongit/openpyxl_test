@@ -1,9 +1,12 @@
 from openpyxl import Workbook
 from openpyxl.utils import get_column_letter
 
+# Simple usage_______________________________________________________________
+# Write a workbook_________________________________________
+
 wb = Workbook()
 
-dest_filename = 'usage_write.xlsx'
+dest_filename = 'usage.xlsx'
 
 ws1 = wb.active
 ws1.title = "range names"
@@ -21,6 +24,6 @@ for row in range(10, 20):
         _ = ws3.cell(column=col, row=row, value="{0}".format(get_column_letter(col)))
 
 print(ws3['AA10'].value)
-#AA
+# AA
 
 wb.save(filename = dest_filename)
