@@ -270,5 +270,17 @@ print(d.value)
 # >>> # MS Excel will not open the document
 # -------------------------------------------------------------------------------------------
 
+
+# Loading from a file_______________________________________________________________
+
+# The same way as writing, you can use the openpyxl.load_workbook() to open an existing workbook:
+
+'''
+>>> from openpyxl import load_workbook
+>>> wb2 = load_workbook('test.xlsx')
+>>> print(wb2.sheetnames)
+['Sheet2', 'New Title', 'Sheet1']
+'''
+
 # Save the file
 wb.save("tutorial.xlsx")

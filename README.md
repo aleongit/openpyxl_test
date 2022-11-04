@@ -53,6 +53,9 @@ wb.save("sample.xlsx")
 
 ## Tutorial
 
+* tutorial.py
+* tutorial.xlsx
+
 https://openpyxl.readthedocs.io/en/stable/tutorial.html
 
 1. <a href="https://openpyxl.readthedocs.io/en/stable/tutorial.html#create-a-workbook">Create a Workbook</a>
@@ -65,3 +68,14 @@ https://openpyxl.readthedocs.io/en/stable/tutorial.html
 3. <a href="https://openpyxl.readthedocs.io/en/stable/tutorial.html#data-storage">Data storage</a>
 - <a href="https://openpyxl.readthedocs.io/en/stable/tutorial.html#saving-to-a-file">Saving to a file</a>
 - <a href="https://openpyxl.readthedocs.io/en/stable/tutorial.html#saving-as-a-stream">Saving as a stream</a>
+
+4. <a href="https://openpyxl.readthedocs.io/en/stable/tutorial.html#loading-from-a-file">Loading from a file</a>
+
+
+## Simple usage [usage.py]
+* usage_write.py
+* usage.xlsx
+
+https://openpyxl.readthedocs.io/en/stable/usage.html
+
+1. <a href="https://openpyxl.readthedocs.io/en/stable/usage.html#write-a-workbook">Write a workbook</a>
