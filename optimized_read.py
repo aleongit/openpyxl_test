@@ -42,3 +42,15 @@ print('Execution time read_only:', elapsed_time, 'seconds')
 #   openpyxl.cell.cell.Cell 
 # but 
 #   openpyxl.cell._read_only.ReadOnlyCell.
+
+# Worksheet dimensions
+# Read-only mode relies on applications and libraries that created 
+# the file providing correct information about the worksheets, 
+# specifically the used part of it, known as the dimensions. 
+# Some applications set this incorrectly. 
+# You can check the apparent dimensions of a worksheet using ws.calculate_dimension(). 
+# If this returns a range that you know is incorrect, 
+# say A1:A1 then simply resetting the max_row and max_column attributes 
+# should allow you to work with the file:
+
+# ws.reset_dimensions()
