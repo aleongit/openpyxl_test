@@ -2,9 +2,12 @@ from openpyxl import Workbook
 
 # Create a workbook_______________________________________________________________
 
+# There is no need to create a file on the filesystem to get started with openpyxl.
+# Just import the Workbook class and start work:
 wb = Workbook()
 
-# Workbook.active
+# A workbook is always created with at least one worksheet. 
+# You can get it by using the Workbook.active property:
 ws = wb.active
 
 # -------------------------------------------------------------------------------------------
@@ -13,28 +16,32 @@ ws = wb.active
 # Unless you modify its value, you will always get the first worksheet by using this method.
 # -------------------------------------------------------------------------------------------
 
-# Workbook.create_sheet()
+# You can create new worksheets using the Workbook.create_sheet() method:
 ws1 = wb.create_sheet("End") # insert at the end (default)
 # or
 ws2 = wb.create_sheet("First", 0) # insert at first position
 # or
 ws3 = wb.create_sheet("Penultimate", -1) # insert at the penultimate position
 
-# Title
+# Sheets are given a name automatically when they are created.
+# They are numbered in sequence (Sheet, Sheet1, Sheet2, …). 
+# You can change this name at any time with the Worksheet.title property:
 ws.title = "New"
 
-# Tab color HEX
+# The background color of the tab holding this title is white by default. 
+# You can change this providing an RRGGBB color code to the Worksheet.sheet_properties.tabColor attribute:
+
 #ws.sheet_properties.tabColor = "1072BA"
 ws.sheet_properties.tabColor = "E2FFA7"
 
-# Get worksheet
+# Once you gave a worksheet a name, you can get it as a key of the workbook:
 ws = wb["New"]
 
-# Sheetnames
+# You can review the names of all worksheets of the workbook with the Workbook.sheetname attribute
 print(wb.sheetnames)
 #['Sheet2', 'New Title', 'Sheet1']
 
-# Sheet Loop
+# You can loop through worksheets
 for sheet in wb:
     print(sheet.title)
 
@@ -43,7 +50,7 @@ for sheet in wb:
 wb.active = wb['New']
 print(wb.active)
 
-# Copy worksheet
+# You can create copies of worksheets within a single workbook with Workbook.copy_worksheet() method:
 source = wb.active
 target = wb.copy_worksheet(source)
 
@@ -59,11 +66,13 @@ target = wb.copy_worksheet(source)
 # Playing with data_______________________________________________________________
 # Accessing one cell_________________________________________
 
-# Get cell
+# Now we know how to get a worksheet, we can start modifying cells content. 
+# Cells can be accessed directly as keys of the worksheet:
 c = ws['A4']
 print('cell', c)
 
-# Set cell
+# This will return the cell at A4, or create one if it does not exist yet.
+# Values can be directly assigned:
 ws['A1'] = 4
 ws['A2'] = 'test'
 
@@ -97,6 +106,7 @@ d = ws.cell(row=4, column=2, value=10)
 cell_range = ws['A1':'C2']
 print(cell_range)
 
+# Ranges of rows or columns can be obtained similarly:
 colC = ws['C']
 col_range = ws['C:D']
 row10 = ws[10]
@@ -137,7 +147,8 @@ print()
 # For performance reasons the Worksheet.iter_cols() method is not available in read-only mode.
 # -------------------------------------------------------------------------------------------
 
-# If you need to iterate through all the rows or columns of a file, you can instead use the Worksheet.rows property:
+# If you need to iterate through all the rows or columns of a file,
+# you can instead use the Worksheet.rows property:
 ws = wb.active
 ws['C9'] = 'hello world'
 rows = tuple(ws.rows)
