@@ -58,6 +58,6 @@ https://openpyxl.readthedocs.io/en/stable/tutorial.html
 1. <a href="https://openpyxl.readthedocs.io/en/stable/tutorial.html#create-a-workbook">Create a Workbook</a>
 
 2. <a href="https://openpyxl.readthedocs.io/en/stable/tutorial.html#playing-with-data">Playing with data</a>
-- Accessing one cell
-- Accessing many cells
-- Values only
+- <a href="https://openpyxl.readthedocs.io/en/stable/tutorial.html#accessing-one-cell">Accessing one cell</a>
+- <a href="https://openpyxl.readthedocs.io/en/stable/tutorial.html#accessing-many-cells">Accessing many cells</a>
+- <a href="https://openpyxl.readthedocs.io/en/stable/tutorial.html#values-only">Values only</a>
