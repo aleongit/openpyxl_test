@@ -51,14 +51,12 @@ ws['A2'] = datetime.datetime.now()
 wb.save("sample.xlsx")
 ```
 
-## Tutorial
+## <a href="https://openpyxl.readthedocs.io/en/stable/tutorial.html">Tutorial</a>
 
 ```
 py: [tutorial.py]
 xlsx: [tutorial.xlsx]
 ```
-
-https://openpyxl.readthedocs.io/en/stable/tutorial.html
 
 1. <a href="https://openpyxl.readthedocs.io/en/stable/tutorial.html#create-a-workbook">Create a Workbook</a>
 
@@ -74,7 +72,7 @@ https://openpyxl.readthedocs.io/en/stable/tutorial.html
 4. <a href="https://openpyxl.readthedocs.io/en/stable/tutorial.html#loading-from-a-file">Loading from a file</a>
 
 
-## Simple usage
+## <a href="https://openpyxl.readthedocs.io/en/stable/usage.html">Simple usage</a>
 
 ```
 py: [
@@ -89,8 +87,6 @@ py: [
 xlsx: [usage.xlsx]
 ```
 
-https://openpyxl.readthedocs.io/en/stable/usage.html
-
 1. <a href="https://openpyxl.readthedocs.io/en/stable/usage.html#write-a-workbook">Write a workbook</a>
 2. <a href="https://openpyxl.readthedocs.io/en/stable/usage.html#read-an-existing-workbook">Read an existing workbook</a>
 3. <a href="https://openpyxl.readthedocs.io/en/stable/usage.html#using-number-formats">Using number formats</a>
@@ -100,19 +96,15 @@ https://openpyxl.readthedocs.io/en/stable/usage.html
 7. <a href="https://openpyxl.readthedocs.io/en/stable/usage.html#fold-outline">Fold (outline)</a>
 
 
-## Performance
-
-https://openpyxl.readthedocs.io/en/stable/performance.html
+## <a href="https://openpyxl.readthedocs.io/en/stable/performance.html">Performance</a>
 
 
-## Optimised Modes
+## <a href="https://openpyxl.readthedocs.io/en/stable/optimized.html">Optimised Modes</a>
 
 ```
 py: [optimized.py]
 xlsx: [optimized.xlsx]
 ```
-
-https://openpyxl.readthedocs.io/en/stable/optimized.html#
 
 1. <a href="https://openpyxl.readthedocs.io/en/stable/optimized.html#read-only-mode">Read-only mode</a>
 2. <a href="https://openpyxl.readthedocs.io/en/stable/optimized.html#write-only-mode">Write-only mode</a>
