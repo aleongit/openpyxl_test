@@ -77,7 +77,12 @@ https://openpyxl.readthedocs.io/en/stable/tutorial.html
 ## Simple usage
 
 ```
-py: [usage_write.py, usage_read.py ,usage_number.py]
+py: [
+    usage_write.py,
+    usage_read.py,
+    usage_number.py,
+    usage_formulae.py
+    ]
 xlsx: [usage.xlsx]
 ```
 
@@ -86,3 +91,4 @@ https://openpyxl.readthedocs.io/en/stable/usage.html
 1. <a href="https://openpyxl.readthedocs.io/en/stable/usage.html#write-a-workbook">Write a workbook</a>
 2. <a href="https://openpyxl.readthedocs.io/en/stable/usage.html#read-an-existing-workbook">Read an existing workbook</a>
 3. <a href="https://openpyxl.readthedocs.io/en/stable/usage.html#using-number-formats">Using number formats</a>
+4. <a href="https://openpyxl.readthedocs.io/en/stable/usage.html#using-formulae">Using formulae</a>

@@ -6,12 +6,27 @@ from openpyxl import Workbook, load_workbook
 
 # file
 file = 'usage.xlsx'
+sheetname = 'Number_Format'
 
 # open file
 wb = load_workbook(filename = file)
 
-# new sheet at the end
-sheet = wb.create_sheet(title="Number_Format")
+# if sheet exists
+if sheetname in wb.sheetnames:
+    print('%s exists' %(sheetname))
+    print( sheetname + ' exists!')
+    print(f'{sheetname} exists!!!')
+    
+    # select sheet
+    sheet = wb[sheetname]
+
+else:
+    print('%s NO exists' %(sheetname))
+    print( sheetname + ' NO exists!')
+    print(f'{sheetname} NO exists!!!')
+    
+    # new sheet at the end
+    sheet = wb.create_sheet(title=sheetname)
 
 # set date using a Python datetime
 sheet['A1'] = datetime.datetime(2010, 7, 21)
