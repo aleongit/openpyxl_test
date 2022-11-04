@@ -166,7 +166,29 @@ print()
 
 
 # Values only_________________________________________
-# TODO:
+
+# If you just want the values from a worksheet you can use the Worksheet.values property.
+# This iterates over all the rows in a worksheet but returns just the cell values:
+for row in ws.values:
+   for value in row:
+     print(value)
+print()
+
+# Both Worksheet.iter_rows() and Worksheet.iter_cols()
+# can take the values_only parameter to return just the cell’s value:
+for row in ws.iter_rows(min_row=1, max_col=3, max_row=2, values_only=True):
+    print(row)
+print()
+
+
+# Data storage_______________________________________________________________
+
+
+# Saving to a file_________________________________________
+
+
+# Saving as a stream_________________________________________
+
 
 # Save the file
 wb.save("tutorial.xlsx")

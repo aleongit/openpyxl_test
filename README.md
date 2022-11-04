@@ -61,3 +61,7 @@ https://openpyxl.readthedocs.io/en/stable/tutorial.html
 - <a href="https://openpyxl.readthedocs.io/en/stable/tutorial.html#accessing-one-cell">Accessing one cell</a>
 - <a href="https://openpyxl.readthedocs.io/en/stable/tutorial.html#accessing-many-cells">Accessing many cells</a>
 - <a href="https://openpyxl.readthedocs.io/en/stable/tutorial.html#values-only">Values only</a>
+
+3. <a href="https://openpyxl.readthedocs.io/en/stable/tutorial.html#data-storage">Data storage</a>
+- <a href="https://openpyxl.readthedocs.io/en/stable/tutorial.html#saving-to-a-file">Saving to a file</a>
+- <a href="https://openpyxl.readthedocs.io/en/stable/tutorial.html#saving-as-a-stream">Saving as a stream</a>
