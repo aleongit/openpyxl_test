@@ -1,7 +1,8 @@
 from openpyxl import load_workbook
 import time
 
-# read only________________________________________________________
+# Optimised Modes_______________________________________________________________
+# Read-only mode_________________________________________
 
 # Sometimes, you will need to open or write extremely large XLSX files, 
 # and the common routines in openpyxl won’t be able to handle that load.

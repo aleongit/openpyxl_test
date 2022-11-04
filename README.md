@@ -102,8 +102,15 @@ xlsx: [usage.xlsx]
 ## <a href="https://openpyxl.readthedocs.io/en/stable/optimized.html">Optimised Modes</a>
 
 ```
-py: [optimized_read.py]
-xlsx: [lf.xlsx]
+py: [
+    optimized_read.py,
+    optimized_write.py
+    ]
+xlsx: [
+    lf.xlsx (to read large file 17.890 rows),
+    big_file.xlsx (to write),
+    write_only_file.xlsx (to write)
+    ]
 ```
 
 1. <a href="https://openpyxl.readthedocs.io/en/stable/optimized.html#read-only-mode">Read-only mode</a>
