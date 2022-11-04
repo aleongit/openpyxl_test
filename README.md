@@ -53,9 +53,10 @@ wb.save("sample.xlsx")
 
 ## Tutorial
 
-* tutorial.py
-
-* tutorial.xlsx
+```
+py: [tutorial.py]
+xlsx: [tutorial.xlsx]
+```
 
 https://openpyxl.readthedocs.io/en/stable/tutorial.html
 
@@ -73,13 +74,12 @@ https://openpyxl.readthedocs.io/en/stable/tutorial.html
 4. <a href="https://openpyxl.readthedocs.io/en/stable/tutorial.html#loading-from-a-file">Loading from a file</a>
 
 
-## Simple usage [usage.py]
+## Simple usage
 
-* usage_write.py
-* usage_read.py
-* usage_number.py
-
-* usage.xlsx
+```
+py: [usage_write.py, usage_read.py ,usage_number.py]
+xlsx: [usage.xlsx]
+```
 
 https://openpyxl.readthedocs.io/en/stable/usage.html
 
