@@ -183,12 +183,92 @@ print()
 
 # Data storage_______________________________________________________________
 
+# Once we have a Cell, we can assign it a value:
+c.value = 'hello, world'
+print(c.value)
+#'hello, world'
+
+d.value = 3.14
+print(d.value)
+#3.14
 
 # Saving to a file_________________________________________
 
+# The simplest and safest way to save a workbook is by using the Workbook.save() method of the Workbook object:
+# wb = Workbook()
+# wb.save('balances.xlsx')
+
+# -------------------------------------------------------------------------------------------
+# Warning !!!
+# This operation will overwrite existing files without warning.
+#
+# Note !!!
+# The filename extension is not forced to be xlsx or xlsm,
+# although you might have some trouble opening it directly with another application 
+# if you don’t use an official extension.
+# As OOXML files are basically ZIP files, you can also open it with your favourite ZIP archive manager.
+# -------------------------------------------------------------------------------------------
 
 # Saving as a stream_________________________________________
 
+# If you want to save the file to a stream,
+# e.g. when using a web application such as Pyramid, Flask or Django 
+# then you can simply provide a NamedTemporaryFile():
+
+'''
+>>> from tempfile import NamedTemporaryFile
+>>> from openpyxl import Workbook
+>>> wb = Workbook()
+>>> with NamedTemporaryFile() as tmp:
+        wb.save(tmp.name)
+        tmp.seek(0)
+        stream = tmp.read()
+'''
+
+# You can specify the attribute template=True, to save a workbook as a template:
+
+'''
+>>> wb = load_workbook('document.xlsx')
+>>> wb.template = True
+>>> wb.save('document_template.xltx')
+'''
+
+# or set this attribute to False (default), to save as a document:
+
+'''
+>>> wb = load_workbook('document_template.xltx')
+>>> wb.template = False
+>>> wb.save('document.xlsx', as_template=False)
+'''
+
+# -------------------------------------------------------------------------------------------
+# Warning !!!
+# You should monitor the data attributes and document extensions 
+# for saving documents in the document templates and vice versa,
+# otherwise the result table engine can not open the document.
+#
+# Note !!!
+# The following will fail:
+#
+# >>> wb = load_workbook('document.xlsx')
+# >>> # Need to save with the extension *.xlsx
+# >>> wb.save('new_document.xlsm')
+# >>> # MS Excel can't open the document
+# >>>
+# >>> # or
+# >>>
+# >>> # Need specify attribute keep_vba=True
+# >>> wb = load_workbook('document.xlsm')
+# >>> wb.save('new_document.xlsm')
+# >>> # MS Excel will not open the document
+# >>>
+# >>> # or
+# >>>
+# >>> wb = load_workbook('document.xltm', keep_vba=True)
+# >>> # If we need a template document, then we must specify extension as *.xltm.
+# >>> wb.save('new_document.xlsm')
+# >>> # MS Excel will not open the document
+# -------------------------------------------------------------------------------------------
 
 # Save the file
 wb.save("tutorial.xlsx")
