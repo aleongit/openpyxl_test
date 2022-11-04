@@ -81,7 +81,8 @@ py: [
     usage_write.py,
     usage_read.py,
     usage_number.py,
-    usage_formulae.py
+    usage_formulae.py,
+    usage_merge.py,
     ]
 xlsx: [usage.xlsx]
 ```
@@ -92,3 +93,4 @@ https://openpyxl.readthedocs.io/en/stable/usage.html
 2. <a href="https://openpyxl.readthedocs.io/en/stable/usage.html#read-an-existing-workbook">Read an existing workbook</a>
 3. <a href="https://openpyxl.readthedocs.io/en/stable/usage.html#using-number-formats">Using number formats</a>
 4. <a href="https://openpyxl.readthedocs.io/en/stable/usage.html#using-formulae">Using formulae</a>
+5. <a href="https://openpyxl.readthedocs.io/en/stable/usage.html#merge-unmerge-cells">Merge / Unmerge cells</a>
