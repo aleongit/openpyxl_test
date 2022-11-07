@@ -53,3 +53,57 @@ wb.save("table.xlsx")
 
 
 # Working with Tables_________________________________________
+
+# ws.tables is a dictionary-like object of all the tables in a particular worksheet:
+
+ws.tables
+# print(ws.tables)
+# {"Table1",  <openpyxl.worksheet.table.Table object>}
+
+# Get Table by name or range
+ws.tables["Table1"]
+# print(ws.tables["Table1"])
+
+#or
+# print(ws.tables["A1:E5"])
+
+# Iterate through all tables in a worksheet
+for table in ws.tables.values():
+    #print(table)
+    for item in table:
+        print(item)
+
+# get range to get value
+rang = ws[ws.tables['Table1'].ref]
+print(rang)
+for row in rang:
+    #print(row)
+    for cel in row:
+        print(cel.value, end=' ')
+    print()
+
+# Get table name and range of all tables in a worksheet
+# Returns a list of table name and their ranges.
+ws.tables.items()
+print(ws.tables.items)
+# [("Table1", "A1:D10")]
+
+# The number of tables in a worksheet
+print(len(ws.tables))
+# 1
+
+# Delete a table
+del ws.tables["Table1"]
+
+
+# Manually adding column headings_________________________________________
+
+# In write-only mode you can either only add tables without headings:
+
+table.headerRowCount = False
+
+# Or initialise the column headings manually:
+headings = ["Fruit", "2011", "2012", "2013", "2014"] # all values must be strings
+table._initialise_columns()
+for column, value in zip(table.tableColumns, headings):
+    column.name = value
