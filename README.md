@@ -170,3 +170,15 @@ xlsx: [defined_names.xlsx]
 
 1. <a href="https://openpyxl.readthedocs.io/en/stable/defined_names.html#sample-use-for-ranges">Sample use for ranges</a>
 2. <a href="https://openpyxl.readthedocs.io/en/stable/defined_names.html#creating-new-named-ranges">Creating new named ranges</a>
+
+
+## <a href="https://openpyxl.readthedocs.io/en/stable/worksheet_tables.html">Worksheet Tables</a>
+
+```
+py: [tables.py]
+xlsx: [tables.xlsx]
+```
+
+1. <a href="https://openpyxl.readthedocs.io/en/stable/worksheet_tables.html#creating-a-table">Creating a table</a>
+2. <a href="https://openpyxl.readthedocs.io/en/stable/worksheet_tables.html#working-with-tables">Working with Tables</a>
+3. <a href="https://openpyxl.readthedocs.io/en/stable/worksheet_tables.html#manually-adding-column-headings">Manually adding column headings</a>
