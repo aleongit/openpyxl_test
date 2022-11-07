@@ -182,3 +182,13 @@ xlsx: [tables.xlsx]
 1. <a href="https://openpyxl.readthedocs.io/en/stable/worksheet_tables.html#creating-a-table">Creating a table</a>
 2. <a href="https://openpyxl.readthedocs.io/en/stable/worksheet_tables.html#working-with-tables">Working with Tables</a>
 3. <a href="https://openpyxl.readthedocs.io/en/stable/worksheet_tables.html#manually-adding-column-headings">Manually adding column headings</a>
+
+
+
+## <a href="https://openpyxl.readthedocs.io/en/stable/formula.html">Parsing Formulas</a>
+
+
+## <a href="https://openpyxl.readthedocs.io/en/stable/datetime.html">Dates and Times</a>
+
+
+## <a href="https://openpyxl.readthedocs.io/en/stable/protection.html">Protection</a>
